@@ -1,0 +1,10 @@
+[Unit]
+Description=Periodically synchronize VyOS HAProxy services to Homepage
+
+[Timer]
+OnBootSec=30s
+OnUnitActiveSec=5min
+Persistent=true
+
+[Install]
+WantedBy=timers.target
