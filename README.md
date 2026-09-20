@@ -94,7 +94,7 @@ sudo nano /etc/vyos-homepage-sync.conf
 Example:
 
 ```bash
-VYOS_URL=https://192.168.148.3:444
+VYOS_URL=https://vyos.example.internal:444
 VYOS_API_KEY=CHANGE_ME
 VYOS_VERIFY_TLS=false
 HOMEPAGE_SERVICES=/opt/homepage/config/services.yaml
