@@ -15,7 +15,7 @@ import yaml
 
 VERSION = "1.1.0"
 
-VYOS_URL = os.environ.get("VYOS_URL", "https://192.168.148.3:444")
+VYOS_URL = os.environ.get("VYOS_URL", "").strip()
 VYOS_API_KEY = os.environ.get("VYOS_API_KEY")
 SERVICES_FILE = Path(os.environ.get("HOMEPAGE_SERVICES", "/opt/homepage/config/services.yaml"))
 GROUP_NAME = os.environ.get("HOMEPAGE_GROUP", "Services")
