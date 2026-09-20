@@ -1,0 +1,14 @@
+[Unit]
+Description=Synchronize VyOS HAProxy services to Homepage
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/etc/vyos-homepage-sync.conf
+ExecStart=/usr/local/sbin/vyos-homepage-sync
+NoNewPrivileges=true
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target
